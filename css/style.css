@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --page-max-width: 1100px;
+    --page-padding-x: 18px;
+    --layout-gap: 22px;
+    --aside-width: 300px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: #e7eef6;
+    color: #222222;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.header_content {
+    /* border: 2px solid #222222; */
+    display: flex;
+    background-color: rgb(185, 209, 236);
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 18px 24px;
+}
+
+.foto {
+    width: 250px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.foto_profissional {
+    display: flex;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+}
+
+.infos_profissional {
+    /* border: 2px solid #222222; */
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.infos_profissional h1,
+.infos_profissional p {
+    margin: 3px;
+}
+
+.cargo {
+    font-size: 23px;
+    color: #2a51a3;
+    font-weight: bold;
+}
+
+.resumo {
+    font-size: 16px;
+    color: #333333;
+    flex-wrap: wrap;
+}
+
+.main_content {
+    /* border: 2px solid #222222; */
+    display: flex;
+    margin: 18px auto;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--layout-gap);
+    max-width: var(--page-max-width);
+    padding: 0 var(--page-padding-x);
+}
+
+.aside_bar {
+    background-color: rgba(255, 255, 255, 0.74);
+    /* border: 2px solid #222222; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: var(--aside-width);
+    flex: 0 0 var(--aside-width);
+}
+
+.aside_bar img {
+    margin: 7px;
+}
+
+.aside_bar h3 {
+    margin: 14px 0 6px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.e-mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.telefone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+}
+
+.e-mail a,
+.telefone a,
+.linkedin a {
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.icone {
+    width: 20px;
+    height: 20px;
+}
+
+.telefone a,
+.e-mail a,
+.linkedin a {
+    color: black;
+    text-decoration: none;
+}
+
+.skills_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill_tag {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 2px solid #2a51a3;
+    background-color: #2a51a3;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.language_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.language_item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.github_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.github_link a {
+    color: black;
+    text-decoration: none;
+}
+
+.sections {
+    /* border: 2px solid #222222; */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex: 1;
+    padding: 6px 0;
+    gap: 18px;
+    min-width: 0;
+}
+
+#home,
+#about,
+#contact,
+#skills {
+    display: flex;
+    /* border: 2px solid #222222; */
+    background-color: transparent;
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section_title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.section_title::after {
+    content: "";
+    height: 2px;
+    background-color: #2a51a3;
+    flex: 1;
+}
+
+.section_title h2 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    padding: 6px 10px;
+    border: 2px solid #2a51a3;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+.sections p {
+    margin: 0;
+    font-size: 18px;
+    color: #333333;
+}
+
+footer {
+    margin-top: 22px;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-top: 2px solid #2a51a3;
+}
+
+.footer_inner {
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+    padding: 16px var(--page-padding-x);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 767px) {
+    :root {
+        --page-max-width: 100%;
+        --page-padding-x: 12px;
+        --layout-gap: 14px;
+        --aside-width: 100%;
+    }
+
+    .header_content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 14px var(--page-padding-x);
+    }
+
+    .foto {
+        width: min(200px, 70vw);
+    }
+
+    .main_content {
+        flex-direction: column;
+        margin: 12px auto;
+    }
+
+    .aside_bar {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .sections {
+        padding: 0;
+    }
+
+    .aside_bar img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --page-max-width: 960px;
+        --page-padding-x: 16px;
+        --layout-gap: 18px;
+        --aside-width: 260px;
+    }
+
+    .foto {
+        width: 250px;
+    }
+
+    .infos_profissional h1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .cargo {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .resumo {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+
+    .sections p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --page-max-width: 1200px;
+        --page-padding-x: 18px;
+        --layout-gap: 22px;
+        --aside-width: 340px;
+    }
+
+    .main_content {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .footer_inner {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+.info_complementar h3 {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.info_complementar p {
+    margin: 6px 0 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+}
